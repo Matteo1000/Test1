@@ -1,0 +1,26 @@
+				Instructions about how to use Git and Github:
+
+1. Configuration:
+
+mkdir "Working_Directory"
+touch "MyCode.txt"
+git configuration --global user.name "Matteo1000"
+git configuration --global user.email "matteo1000@hotmail.com"
+git init
+git remote add "github_repo" "SSH_name_of_the_online_repository"
+
+2. Add & Remove files:
+
+git add .									<- Adds all the files in the index to be sent
+git commit -m "Comment on what I did change..."					<- Copy into all the files in the local versioning repository
+git push -u "github_repo" "name of the fork to upload (master by default)"	<- Copy into the local versioning deposit to the GitHub repository
+git pull -u "github_repo" "name of the fork to upload (master by default)"	<- Updates the local repository with the modified data from Github
+
+3. Fork and Pull/Merge:
+
+git checkout -b "new_branch"							<- Creates a new branch
+git branch --all								<- List all the branches available
+git checkout -b "existing_branch"						<- Switch to an existing branch (ex: master) and replace the files
+										   in the working directory
+
+
